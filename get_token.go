@@ -24,7 +24,7 @@ func main() {
 		log.Fatalf("Не вдалося обробити конфігурацію: %v", err)
 	}
 
-	config.RedirectURL = "http://localhost:3000/api/auth/google/callback"
+	config.RedirectURL = "https://api.synapse.tel/api/auth/google/callback"
 
 	http.HandleFunc("/api/auth/google/login", func(w http.ResponseWriter, r *http.Request) {
 		authURL := config.AuthCodeURL("state-token", oauth2.AccessTypeOffline, oauth2.ApprovalForce)
@@ -61,7 +61,7 @@ func main() {
 
 	fmt.Println("=== СИСТЕМА АВТОРИЗАЦІЇ GOOGLE ===")
 	fmt.Println("1. Відкрий у браузері посилання:")
-	fmt.Println("   http://localhost:3000/api/auth/google/login")
+	fmt.Println("   https://api.synapse.tel/api/auth/google/login")
 	fmt.Println("2. Увійди через свій Google-акаунт і надай дозволи.")
 	fmt.Println("Очікування...")
 	log.Fatal(http.ListenAndServe(":3000", nil))
