@@ -1,5 +1,5 @@
 ### Изменить баланс и рейтинг пользователя (ТОЛЬКО ДЛЯ АДМИНА)
-PUT https://api.synapse.tel/api/admin/users/a114d8b9-934e-4874-bc8b-96c75c5881bb
+PUT https://synapse.tel/api/admin/users/a114d8b9-934e-4874-bc8b-96c75c5881bb
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg1NjY1NTIsInJvbGUiOiJ1c2VyIiwidXNlcl9pZCI6ImExMTRkOGI5LTkzNGUtNDg3NC1iYzhiLTk2Yzc1YzU4ODFiYiJ9.H66BWpBcH9-M5dW8tbgxUYmGbsbtMRKqAAruqTlom7I
 
